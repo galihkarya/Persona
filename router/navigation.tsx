@@ -7,7 +7,15 @@ const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarShowLabel: false,
+        tabBarActiveBackgroundColor: '#CC3663',
+        tabBarInactiveBackgroundColor: '#CC3663',
+        tabBarActiveTintColor: '#FFFFFF', 
+        
+      }}>
       <Tab.Screen name="Home" component={HomePage} />
       <Tab.Screen name="Group" component={GroupListPage} />
       <Tab.Screen name="Profile" component={ProfilePage} />
