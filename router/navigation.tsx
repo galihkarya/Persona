@@ -1,7 +1,8 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomePage from '../src/homePage';
+import HomePageLogedIn from '../src/logedIn/homePageLogedIn';
 import GroupListPage from '../src/logedIn/groupListPage';
 import ProfilePage from '../src/logedIn/profilePage';
+import {View, Image} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,14 +12,54 @@ const Tabs = () => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarActiveBackgroundColor: '#CC3663',
-        tabBarInactiveBackgroundColor: '#CC3663',
-        tabBarActiveTintColor: '#FFFFFF', 
-        
+        tabBarActiveTintColor: '#FFFFFF',
+        tabBarStyle: {
+          backgroundColor: '#CC3663',
+          height: 75,
+        },
       }}>
-      <Tab.Screen name="Home" component={HomePage} />
-      <Tab.Screen name="Group" component={GroupListPage} />
-      <Tab.Screen name="Profile" component={ProfilePage} />
+      <Tab.Screen
+        name="Home"
+        component={HomePageLogedIn}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View>
+              <Image
+                source={require('../assets/icons/icon_Home_selected.png')}
+                style={{width: 30, height: 30, opacity: focused ? 1 : 0.3}}
+              />
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Group"
+        component={GroupListPage}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View>
+              <Image
+                source={require('../assets/icons/icon_Group_selected.png')}
+                style={{width: 30, height: 30, opacity: focused ? 1 : 0.3}}
+              />
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfilePage}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <View>
+              <Image
+                source={require('../assets/icons/icon_Profile_selected.png')}
+                style={{width: 30, height: 30, opacity: focused ? 1 : 0.3}}
+              />
+            </View>
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 };
