@@ -10,7 +10,7 @@ import {
 
 const HomePage = ({}) => {
   return (
-    <View>
+    <View style={{}}>
       <View style={{marginRight: 10, marginTop: 20}}>
         <TouchableOpacity style={Styles.loginButton}>
           <Text style={Styles.loginText}>Login</Text>
@@ -46,6 +46,9 @@ const HomePage = ({}) => {
           </Text>
         </TouchableOpacity>
       </View>
+      <TouchableOpacity style={Styles.button}>
+        <Text style={Styles.textButton}>Mulai Prediksi</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -90,6 +93,19 @@ const Styles = StyleSheet.create({
     alignSelf: 'center',
     marginRight: 200,
   },
+  button: {
+    backgroundColor: '#CC3663',
+    marginHorizontal: 20,
+    marginVertical: 40,
+    verticalAlign: "bottom" ,
+    borderRadius: 15,
+  },
+  textButton: {
+    textAlign: 'center',
+    color: '#FFFFFF',
+    paddingVertical: 15,
+    fontSize: 14,
+  }
 });
 
 export default HomePage;
