@@ -1,14 +1,12 @@
 import React from 'react';
-import {
-  ScrollView,
-} from 'react-native';
+import {Text, View} from 'react-native';
 
 const GroupListPage = () => {
-    return(
-        <ScrollView>
-            
-        </ScrollView>
-    );
-}
+  return (
+    <View>
+      <Text>Group List</Text>
+    </View>
+  );
+};
 
 export default GroupListPage;

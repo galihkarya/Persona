@@ -5,15 +5,15 @@ import {
   TouchableOpacity,
   StyleSheet,
   Image,
-  SafeAreaView,
 } from 'react-native';
 
-const HomePage = ({}) => {
+const HomePage = () => {
+
   return (
-    <View style={{}}>
+    <View>
       <View style={{marginRight: 10, marginTop: 20}}>
         <TouchableOpacity style={Styles.loginButton}>
-          <Text style={Styles.loginText}>Login</Text>
+          <Text style={Styles.loginText}>Log in</Text>
           <Image
             style={Styles.avatar}
             source={require('../assets/icons/Avatar.png')}
@@ -63,7 +63,7 @@ const Styles = StyleSheet.create({
   loginText: {
     marginRight: 10,
     fontSize: 14,
-    fontWeight: '900',
+    fontWeight: '600',
     color: '#000000',
     alignSelf: 'center',
   },

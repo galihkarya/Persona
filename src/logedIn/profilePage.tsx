@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 import {
-  SafeAreaView,
-} from 'react-native';
+    View,
+    Text,
+  } from 'react-native';
 
 const ProfilePage = () => {
     return(
-        <SafeAreaView>
-            
-        </SafeAreaView>
+        <View>
+            <Text>Profile</Text>
+        </View>
     );
-}
+};
 
 export default ProfilePage;

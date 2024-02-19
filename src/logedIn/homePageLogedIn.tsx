@@ -1,14 +1,12 @@
 import React from 'react';
-import {
-  SafeAreaView,
-} from 'react-native';
+import {View, Text} from 'react-native';
 
 const HomePageLogedIn = () => {
-    return(
-        <SafeAreaView>
-            
-        </SafeAreaView>
-    );
-}
+  return (
+    <View>
+      <Text>Home Page Logged in</Text>
+    </View>
+  );
+};
 
 export default HomePageLogedIn;
