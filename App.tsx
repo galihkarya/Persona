@@ -1,6 +1,6 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import Tabs from './router/bottomBarNavigaton';
+import Tabs from './src/router/bottomBarNavigaton';
 
 const App = () => {
   return(

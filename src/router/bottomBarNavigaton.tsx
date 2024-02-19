@@ -1,7 +1,7 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomePageLogedIn from '../src/logedIn/homePageLogedIn';
-import GroupListPage from '../src/logedIn/groupListPage';
-import ProfilePage from '../src/logedIn/profilePage';
+import HomePageLogedIn from '../logedIn/homePageLogedIn';
+import GroupListPage from '../logedIn/groupListPage';
+import ProfilePage from '../logedIn/profilePage';
 import {View, Image} from 'react-native';
 
 const Tab = createBottomTabNavigator();
