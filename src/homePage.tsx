@@ -7,12 +7,12 @@ import {
   Image,
 } from 'react-native';
 
-const HomePage = () => {
+const HomePage = ({navigation}) => {
 
   return (
     <View>
       <View style={{marginRight: 10, marginTop: 20}}>
-        <TouchableOpacity style={Styles.loginButton}>
+        <TouchableOpacity style={Styles.loginButton} onPress={() => {navigation.navigate('LoginPage')}}>
           <Text style={Styles.loginText}>Log in</Text>
           <Image
             style={Styles.avatar}
@@ -46,7 +46,7 @@ const HomePage = () => {
           </Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity style={Styles.button}>
+      <TouchableOpacity style={Styles.button} onPress={() => {navigation.navigate('CameraPage')}}>
         <Text style={Styles.textButton}>Mulai Prediksi</Text>
       </TouchableOpacity>
     </View>

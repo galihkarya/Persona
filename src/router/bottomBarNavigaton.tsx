@@ -25,7 +25,7 @@ const Tabs = () => {
           tabBarIcon: ({focused}) => (
             <View>
               <Image
-                source={require('../assets/icons/icon_Home_selected.png')}
+                source={require('../../assets/icons/icon_Home_selected.png')}
                 style={{width: 30, height: 30, opacity: focused ? 1 : 0.3}}
               />
             </View>
@@ -39,7 +39,7 @@ const Tabs = () => {
           tabBarIcon: ({focused}) => (
             <View>
               <Image
-                source={require('../assets/icons/icon_Group_selected.png')}
+                source={require('../../assets/icons/icon_Group_selected.png')}
                 style={{width: 30, height: 30, opacity: focused ? 1 : 0.3}}
               />
             </View>
@@ -53,7 +53,7 @@ const Tabs = () => {
           tabBarIcon: ({focused}) => (
             <View>
               <Image
-                source={require('../assets/icons/icon_Profile_selected.png')}
+                source={require('../../assets/icons/icon_Profile_selected.png')}
                 style={{width: 30, height: 30, opacity: focused ? 1 : 0.3}}
               />
             </View>

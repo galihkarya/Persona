@@ -9,11 +9,11 @@ import {
   ScrollView,
 } from 'react-native';
 
-const LoginPage = () => {
+const LoginPage = ({navigation}) => {
   return (
     <ScrollView>
       <View>
-        <TouchableOpacity style={Styles.backButton} hitSlop={{top: 5, bottom: 5, right: 5, left: 5}}>
+        <TouchableOpacity style={Styles.backButton} hitSlop={{top: 5, bottom: 5, right: 5, left: 5}} onPress={() => {navigation.goBack()}}>
           <Image
             style={Styles.avatar}
             source={require('../assets/icons/icon_arrowLeft.png')}
