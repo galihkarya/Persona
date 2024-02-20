@@ -15,7 +15,7 @@ const LoginPage = ({navigation}) => {
       <View>
         <TouchableOpacity style={Styles.backButton} hitSlop={{top: 5, bottom: 5, right: 5, left: 5}} onPress={() => {navigation.goBack()}}>
           <Image
-            style={Styles.avatar}
+            style={Styles.backIcon}
             source={require('../assets/icons/icon_arrowLeft.png')}
           />
         </TouchableOpacity>
@@ -49,14 +49,14 @@ const LoginPage = ({navigation}) => {
 };
 
 const Styles = StyleSheet.create({
-  avatar: {
+  backIcon: {
     width: 20,
     height: 20,
   },
   input: {
     backgroundColor: '#fefefe',
     borderRadius: 10,
-    elevation: 8,
+    elevation: 5,
     paddingHorizontal: 20,
     marginVertical: 8,
   },

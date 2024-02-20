@@ -4,12 +4,12 @@ import {
     Text,
   } from 'react-native';
 
-const RegistInstitution = () => {
+const RegistInstitutionBK = () => {
     return(
         <View>
-            <Text>Institution</Text>
+            <Text>Institution Guru BK</Text>
         </View>
     );
 };
 
-export default RegistInstitution;
+export default RegistInstitutionBK;

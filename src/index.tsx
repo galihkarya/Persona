@@ -3,7 +3,8 @@ import HomePage from './homePage';
 import LoginPage from './loginPage';
 import RegistName from './regist1Name';
 import RegistRole from './regist2Role';
-import RegistInstitution from './regist3Institution';
+import RegistInstitutionBK from './regist3InstitutionBK';
+import RegistInstitutionWK from './regist3InstitutionWK';
 import RegistAccount from './regist4Account';
 import SplashScreen from './splashScreen';
 import AddStudentDataPage from './logedIn/addStudentDataPage';
@@ -19,7 +20,8 @@ export {
   LoginPage,
   RegistName,
   RegistRole,
-  RegistInstitution,
+  RegistInstitutionBK,
+  RegistInstitutionWK, 
   RegistAccount,
   SplashScreen,
   AddStudentDataPage,
