@@ -5,13 +5,11 @@ import {
   TouchableOpacity,
   Image,
   StyleSheet,
-  TextInput,
-  ScrollView,
 } from 'react-native';
 
-const RegistName = ({navigation}) => {
+const RegistRole = ({navigation}) => {
   return (
-    <ScrollView>
+    <View>
       <TouchableOpacity
         style={Styles.backButton}
         hitSlop={{top: 5, bottom: 5, right: 5, left: 5}}
@@ -26,13 +24,13 @@ const RegistName = ({navigation}) => {
       <View style={{marginTop: 50, marginBottom: 30, alignItems: 'center'}}>
         <Image
           style={Styles.imageCenter}
-          source={require('../assets/icons/teacher.png')}
+          source={require('../assets/icons/thinking_face.png')}
         />
         <Text style={Styles.head1}>Role</Text>
         <Text style={Styles.head2}>Tentukan role anda di bawah ini</Text>
       </View>
       <View style={{margin: 20}}>
-        <TextInput style={Styles.input} placeholder="Nama Lengkap" />
+
         <TouchableOpacity
           style={Styles.button}
           onPress={() => {
@@ -41,7 +39,7 @@ const RegistName = ({navigation}) => {
           <Text style={Styles.textButton}>lanjut ...</Text>
         </TouchableOpacity>
       </View>
-    </ScrollView>
+    </View>
   );
 };
 
@@ -90,4 +88,4 @@ const Styles = StyleSheet.create({
   },
 });
 
-export default RegistName;
+export default RegistRole;
