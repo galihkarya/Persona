@@ -13,7 +13,12 @@ const LoginPage = ({navigation}) => {
   return (
     <ScrollView>
       <View>
-        <TouchableOpacity style={Styles.backButton} hitSlop={{top: 5, bottom: 5, right: 5, left: 5}} onPress={() => {navigation.goBack()}}>
+        <TouchableOpacity
+          style={Styles.backButton}
+          hitSlop={{top: 5, bottom: 5, right: 5, left: 5}}
+          onPress={() => {
+            navigation.goBack();
+          }}>
           <Image
             style={Styles.backIcon}
             source={require('../assets/icons/icon_arrowLeft.png')}
@@ -25,7 +30,7 @@ const LoginPage = ({navigation}) => {
           <Text style={{fontWeight: '900', fontSize: 42, color: '#cc3663'}}>
             Selamat datang kembali,
           </Text>
-          <Text style={{marginVertical: 30, }}>
+          <Text style={{marginVertical: 30}}>
             Masukkan username dan password
           </Text>
         </View>
@@ -40,8 +45,10 @@ const LoginPage = ({navigation}) => {
           <Text style={Styles.textButton}>Masuk</Text>
         </TouchableOpacity>
         <View style={{flexDirection: 'row', alignSelf: 'center'}}>
-          <Text>Belum punya akun?       </Text>
-          <TouchableOpacity hitSlop={{top: 5, bottom: 5, right: 5, left: 5}}><Text style={{color: '#CC3663'}}>Daftar</Text></TouchableOpacity>
+          <Text>Belum punya akun? </Text>
+          <TouchableOpacity hitSlop={{top: 5, bottom: 5, right: 5, left: 5}} onPress={() => {navigation.navigate('RegistName')}}>
+            <Text style={{color: '#CC3663'}}>Daftar</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
@@ -56,13 +63,14 @@ const Styles = StyleSheet.create({
   input: {
     backgroundColor: '#fefefe',
     borderRadius: 10,
-    elevation: 5,
+    elevation: 8,
+    shadowColor: '#00000050',
     paddingHorizontal: 20,
     marginVertical: 8,
   },
   button: {
     backgroundColor: '#CC3663',
-    marginVertical: 40,
+    marginVertical: 25,
     verticalAlign: 'bottom',
     borderRadius: 15,
   },
@@ -70,7 +78,7 @@ const Styles = StyleSheet.create({
     textAlign: 'center',
     color: '#FFFFFF',
     paddingVertical: 15,
-    fontSize: 14,
+    fontSize: 16,
   },
   backButton: {
     alignSelf: 'flex-start',
